@@ -26,8 +26,8 @@ body {
   cursor: pointer; }
 
 header {
-  height: 64px;
-  line-height: 64px;
+  height: 56px;
+  line-height: 56px;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -38,12 +38,13 @@ header {
   header #menu-icon {
     position: absolute;
     top: 5px;
-    left: 20px;
+    left: 14px;
     color: #fff; }
   header #title {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 400;
     position: absolute;
-    left: 64px;
+    left: 56px;
     color: #fff; }
 
 #header-nav {
@@ -54,5 +55,19 @@ header {
   left: -100%;
   z-index: 150;
   background: #fff; }
+  #header-nav ul li {
+    height: 43px;
+    line-height: 43px;
+    padding-left: 22px; }
+    #header-nav ul li a {
+      font-size: 13px;
+      font-weight: 700;
+      color: #212121; }
+    #header-nav ul li .active {
+      color: #00BCD4; }
+
+#slideshow {
+  width: 100%;
+  height: calc(); }
 
 /*# sourceMappingURL=styles.css.map */

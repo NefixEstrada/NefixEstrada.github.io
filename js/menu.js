@@ -26,7 +26,7 @@ $(document).ready(function() {
 			$("#header-nav").animate({
 				left: '-100%'
 			});
-			$(this).css("display", "none");
+			$(this).css("display", "none").delay(1000);
 			status = 0;
 		}
 	});
