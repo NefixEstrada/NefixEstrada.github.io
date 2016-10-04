@@ -7,6 +7,19 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 	<script src="js/menu.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.bxslider').bxSlider({
+			captions: true,
+			auto: true,
+			nextSelector: '#slider-next',
+ 			prevSelector: '#slider-prev',
+ 			prevText: '<i class="material-icons">chevron_left</i>',
+ 			nextText: '<i class="material-icons">chevron_right</i>'
+		});
+	});
+	</script>
 </head>
 <body>
 	<div id="shadow-bg"></div>
@@ -19,16 +32,26 @@
 		<nav id="header-nav">
 			<ul>
 				<li><a href="http://nefixestrada.github.io" class="active">Home</a></li>
-				<li><a href="http://nefixestrada.github.io#projects">Projects</a></li>
-				<li><a href="http://nefixestrada.github.io#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#about">About</a></li>
 				<li><a href="">Blog</a></li>
 				<li><a href="">Contact</a></li>
 			</ul>
 		</nav>
 	</section>
-
 	<!-- SLIDESHOW -->
-	<section id="slideshow">HI I'M A SLIDESHOW :D</section>
+	<section id="slideshow">
+		<p id="slide_title">Latest posts</p>
+		<ul class="bxslider">
+			<li><img src="resources/prova.jpeg" title="Lorem"></li>
+			<li><img src="resources/prova.jpeg" title="Ipsum"></li>
+			<li><img src="resources/prova.jpeg" title="Dolor"></li>
+			<li><img src="resources/prova.jpeg" title="Sit"></li>
+			<li><img src="resources/prova.jpeg" title="Amet"></li>
+		</ul>
+		<span id="slider-prev"></span>
+		<span id="slider-next"></span>
+	</section>
 
 	<!-- MAIN -->
 	<section class="main">
